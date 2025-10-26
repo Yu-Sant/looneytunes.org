@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
+
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Looney Tunes.org</title>
-        
-        <style>
-        
-            *{
-                background: #000;
-            }
-            
-            .interface{
-                
-                display: flex;
-                align-items: center;
-                justify-content: space;
-                
-            }
-            
-        </style>
-        
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Looney Tunes</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&display=swap" rel="stylesheet">
     </head>
-    
+
     <body>
-        
-        
-        <form action="validacao.php" method="POST">
-            
-            <fieldset class="interface">
-            
-                <legend><h2>Login</h2></legend>
-                <label for="email">Digite seu e-mail:</label>
+        <form action="validar.php">
+                <label for="email">Endereço de E-mail</label>
                 <br>
-                <input type="email" name="email" id="email" placeholder="seuemail@.looney.org" required>
+                <input type="email" id="email" name="email" placeholder="               @looneytunes.org" required>
                 <br><br>
-                <label for="senha">Digite sua senha:</label>
+                <label for="password">Senha de acesso</label>
                 <br>
-                <input type="password" name="senha" id="senha" placeholder="********" required>
-                <br><br><br>
-                
-            </fieldset>
-            
+                <input type="password" id="password" name="password" placeholder="                  ******" required>
+                <br>
+                <button type="submit" class="button" id="botaoLogin">Entrar</button>
         </form>
-        
+
+        <script>
+            const botao = document.getElementById('botaoLogin');
+
+            botao.addEventListener('mouseenter',() => {botao.textContent='Vamos lá!!'});
+            botao.addEventListener('mouseleave',() => {botao.textContent='Entrar'});
+        </script>
     </body>
-    
+
 </html>

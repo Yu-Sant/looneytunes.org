@@ -39,11 +39,34 @@ button{
     color: white;
     border: none;
     padding: 10px;
-    width: 100%;
+    width: 100px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 button:hover{
     background: #0056b3;
+    transition: 20ms;
+    width: 150px;
+}
+
+.tooltip{
+    position: relative;
+    bottom: 1px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.tooltiptext{
+    visibility: hidden;
+    bottom: 1px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
 }

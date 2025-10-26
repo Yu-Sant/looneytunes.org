@@ -13,22 +13,33 @@
 
     <body>
         <form action="validar.php">
+
                 <label for="email">Endereço de E-mail</label>
                 <br>
                 <input type="email" id="email" name="email" placeholder="               @looneytunes.org" required>
                 <br><br>
+
                 <label for="password">Senha de acesso</label>
                 <br>
                 <input type="password" id="password" name="password" placeholder="                  ******" required>
                 <br>
+
                 <button type="submit" class="button" id="botaoLogin">Entrar</button>
+                <br><br>
+                <div class="tooltip">
+                    Midgard©
+                    <span class="tooltiptext"><br>Sobre nós?</span>
+                </div>
         </form>
 
         <script>
+            
+            // Código para alterar o texto do botão quando o mouse estiver em cima
             const botao = document.getElementById('botaoLogin');
 
             botao.addEventListener('mouseenter',() => {botao.textContent='Vamos lá!!'});
             botao.addEventListener('mouseleave',() => {botao.textContent='Entrar'});
+
         </script>
     </body>
 

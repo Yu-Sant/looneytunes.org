@@ -9,6 +9,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&display=swap" rel="stylesheet">
+        <script>
+            
+            // Código para alterar o texto do botão quando o mouse estiver em cima
+            const botao = document.getElementById('botaoLogin');
+
+            botao.addEventListener('mouseenter',() => {botao.textContent='Vamos lá, Velhinho!!'});
+            botao.addEventListener('mouseleave',() => {botao.textContent='Entrar'});
+
+        </script>
     </head>
 
     <body>
@@ -32,15 +41,7 @@
                 </div>
         </form>
 
-        <script>
-            
-            // Código para alterar o texto do botão quando o mouse estiver em cima
-            const botao = document.getElementById('botaoLogin');
-
-            botao.addEventListener('mouseenter',() => {botao.textContent='Vamos lá, Velhinho!!'});
-            botao.addEventListener('mouseleave',() => {botao.textContent='Entrar'});
-
-        </script>
     </body>
+
 
 </html>
